@@ -14,7 +14,13 @@ function moverBoton() {
     btn.style.transition = 'all 0.5s ease';
 }
 
-// Asignar eventos a los botones
-document.getElementById('siBtn').addEventListener('click', aceptar);
-document.getElementById('noBtn').addEventListener('mouseover', moverBoton);
+// Función para mostrar la foto y las frases al hacer clic en el corazón
+function mostrarFotoFrase() {
+    const fotoFrase = document.getElementById('fotoFrase');
+    fotoFrase.style.display = 'block';  // Mostrar la foto y la frase
+}
 
+// Asignar eventos a los botones
+document.getElementById('siBtn').addEventListener('click', aceptar); // Evento al botón "Sí"
+document.getElementById('noBtn').addEventListener('mouseover', moverBoton); // Evento al botón "No"
+document.querySelector('.corazon').addEventListener('click', mostrarFotoFrase);  // Evento al corazón
