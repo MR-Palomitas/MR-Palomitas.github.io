@@ -11,15 +11,6 @@
     
     <!-- Enlazar archivo CSS -->
     <link rel="stylesheet" href="styles/main.css">
-
-    <style>
-        /* Ocultar video y mensaje al inicio */
-        .video-container, .mensaje-final {
-            display: none;
-            text-align: center;
-            margin-top: 20px;
-        }
-    </style>
 </head>
 <body>
     <div class="container">
@@ -32,22 +23,31 @@
             <button id="noBtn">No</button>
         </div>
 
+        <!-- Video -->
         <div class="video-container" id="videoContainer">
             <iframe
                 id="videoFrame"
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/BuRL2tPmljU?autoplay=1"  <!-- Agregado autoplay -->
+                src="https://www.youtube.com/embed/BuRL2tPmljU"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
             </iframe>
         </div>
-        
+
+        <!-- Mensaje Final -->
         <div class="mensaje-final" id="mensaje">
             ¡Sabía que dirías que sí! 💖<br>
             Te amo más que a nada en este mundo 🌍
         </div>
+
+        <!-- Foto con Frases -->
+        <div class="foto-frase" id="fotoFrase">
+            <img src="jpg/DUDU_Y_BUBU.jpg" alt="jpg">
+            <p>¡Eres lo mejor de mi vida! 💖</p>
+        </div>
+
     </div>
 
     <!-- Enlazar archivo JavaScript -->
