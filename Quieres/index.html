@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quieres ser mi San Valentín?</title>
+    
+    <!-- Librerías externas -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Enlazar archivo CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+
+    <style>
+        /* Ocultar video y mensaje al inicio */
+        .video-container, .mensaje-final {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="animate__animated animate__bounceInDown">¿Quieres ser mi San Valentín? ❤️</h1>
+        
+        <div class="corazon"><i class="fas fa-heart"></i></div>
+
+        <div class="botones">
+            <button id="siBtn">¡Sí!</button>
+            <button id="noBtn">No</button>
+        </div>
+
+        <div class="video-container" id="videoContainer">
+            <iframe
+                id="videoFrame"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/BuRL2tPmljU?autoplay=1"  <!-- Agregado autoplay -->
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+        
+        <div class="mensaje-final" id="mensaje">
+            ¡Sabía que dirías que sí! 💖<br>
+            Te amo más que a nada en este mundo 🌍
+        </div>
+    </div>
+
+    <!-- Enlazar archivo JavaScript -->
+    <script src="scripts/main.js"></script>
+</body>
+</html>
